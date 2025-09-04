@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int max(int susu, int tot, inttanda){
+int max(int *susu, int tot, int *tanda){
     int inx = 1;
     for(int i = 1; i <= tot; i++){
         if(!tanda[i] && (inx == -1 || susu[i] > susu[inx])){
